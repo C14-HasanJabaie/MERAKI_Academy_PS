@@ -8,12 +8,14 @@ Hint: her resource for Regular expressions you can check it and read more (https
 */
 
 const longestWord_2 = (str) => {
-  // YOUR CODE HERE
+console.log(str.split("-"))
+let strArr= str.split("-")
+console.log(strArr[0])
 };
-
+longestWord_2("lol!- time."); // => "time"
 /* 
 Examples:
-longestWord_2("lol!- time."); // => "time"
+
 longestWord_2("I** love, cats"); // => "love"
 longestWord_2("coding&& is awesome"); // => "awesome"
 longestWord_2("hello|| world"); // => "hello"
