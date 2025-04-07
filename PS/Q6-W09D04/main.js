@@ -6,16 +6,25 @@ If the array has an even number of elements, return the average of the two middl
 */
 
 const arrayCenter = (arr) => {
-  // YOUR CODE HERE
+ arr.forEach(element => {
+  if(arr.length %2 === 0 ){
+    let middle = arr[arr.length-1 %2]+ arr[(((arr.length -1)%2)+1)]
+    console.log(middle)
+  }else{
+    let middle1 = arr[(arr.length-1)/2]
+    console.log(middle1)
+  }
+  
+ });  
 };
 
-/*
-Examples:
-arrayCenter([2, 3, -4, 6, 1, 5]); // => 1
+
+
 arrayCenter([2, 3, 4, -6, 2]); // => 4
+
+
 arrayCenter([2, 3, 2, 9, 2]); // => 2
 arrayCenter([2, 5, 1]); // => 5
 arrayCenter([2, 3]); // => 2.5
 arrayCenter([]); // => "empty Array"
-*/
 module.exports = { arrayCenter };
