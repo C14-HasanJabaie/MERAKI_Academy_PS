@@ -6,10 +6,18 @@ To simplify the problem, you can assume that both arrays will contain only strin
 Hint : her resource for Prototype you can check it and read more (https://www.w3schools.com/js/js_object_prototypes.asp)
 */
 
-Array.prototype.isPartOf = function (array) {
-  // YOUR CODE HERE
-};
+const includes = (array,arr2)=>{
+  console.log(array,arr2)
+  if(array.some(item => arr2.includes(item))){
+    console.log(true)
+  }else{
+    console.log(false)
+  };
+}
+includes(['car', 'dog', 'cow'],['dog', 'cow', 'fox'])
 
+
+// .isPartOf() // => true
 /*
 Examples:
 [].isPartOf([1, 5, 2]) // => true
