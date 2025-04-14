@@ -5,8 +5,9 @@ Write a JavaScript function to copy an array.
 */
 
 const array_Copy = (arr) => {
-
-  console.log(arr)};
+const newArr= arr.splice(0,arr.length)
+console.log(newArr)
+};
 array_Copy(["string", true, 3]); // => ["string", true, 3]
 
 

@@ -4,13 +4,16 @@ Write a JavaScript function to check whether an `input` is an array or not.
 */
 
 const isItArray = (input) => {
-  // YOUR CODE HERE
-};
+  console.log(typeof input)
+  // if(typeof input){
 
+  // }
+};
+isItArray([1, 2, 4, 0]) // => true
 /*
 Examples:
 isItArray("w3resource") => false
-isItArray([1, 2, 4, 0]) // => true
+
 isItArray(3) => false
 isItArray(false) => false
 isItArray([true, 3, "MerakiAcademy"]) => true
