@@ -4,18 +4,23 @@ Write a JavaScript function to check whether an `input` is an array or not.
 */
 
 const isItArray = (input) => {
-  console.log(typeof input)
-  // if(typeof input){
+ 
+  if( typeof input === "object"  && input.length >=1 ){
+   
+    console.log(true )
 
-  // }
+  }else{
+    console.log(false)
+  }
 };
 isItArray([1, 2, 4, 0]) // => true
-/*
-Examples:
-isItArray("w3resource") => false
+ isItArray({name: "has"}) // => false
 
-isItArray(3) => false
-isItArray(false) => false
-isItArray([true, 3, "MerakiAcademy"]) => true
-*/
+Examples:
+isItArray("w3resource")// => false
+
+isItArray(3)// => false
+isItArray(false)// => false
+isItArray([true, 3, "MerakiAcademy"]) //=> true
+
 module.exports = { isItArray };
