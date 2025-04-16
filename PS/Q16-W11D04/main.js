@@ -15,13 +15,22 @@ Output:
 
 */
 const floydTriangle = (rows) => {
-  // YOUR CODE HERE
-};
+  counter = 0
+  for(i=1 ;i<=rows;i++)
+  {
+
+  
+  console.log(i)
+    
+  }
+    
+  };
+;
+floydTriangle(10);
 
 /*
 Examples:
 Input:
-floydTriangle(10);
 
 Output:
 1

@@ -6,9 +6,23 @@ Ignore any space character
 */
 
 const removeNotUnique = (str) => {
-  // YOUR CODE HERE
-};
+  let arrStr= str.split("")
 
+  arrStr.forEach(e => {
+   if(arrStr.includes(e)===true){
+    console.log("yes")
+   }else{
+    console.log("no")
+   }
+   
+  
+  })
+   
+
+
+  
+};
+removeNotUnique("memory") // => "eory"
 /* 
 Examples:
 removeNotUnique("memory") // => "eory"
