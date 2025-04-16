@@ -9,8 +9,8 @@ const removeNotUnique = (str) => {
   let arrStr= str.split("")
 
   arrStr.forEach(e => {
-   if(arrStr.includes(e)===true){
-    console.log("yes")
+   if(arrStr.indexOf(e)){
+    console.log(arrStr)
    }else{
     console.log("no")
    }

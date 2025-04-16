@@ -18,12 +18,15 @@ const floydTriangle = (rows) => {
   counter = 0
   for(i=1 ;i<=rows;i++)
   {
+for(j=0 ;j<=rows;j++){
+
+}
 
   
   console.log(i)
-    
   }
-    
+ 
+  
   };
 ;
 floydTriangle(10);
